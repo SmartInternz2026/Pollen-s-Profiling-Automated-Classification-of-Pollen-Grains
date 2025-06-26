@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Arial", sans-serif;
+  background: url("pollen-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px #00000099;
+  font-weight: 700;
+}
+
+form {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 24px;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+  background: #219150;
+  color: #eaffea;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #f9a825;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.main-section {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 60px 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.25); /* subtle overlay for readability */
+}
+
+.upload-container {
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 24px 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-icon {
+  width: 70px;
+  height: 70px;
+  background: #7ec6b2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-icon svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+}
+
+.upload-form {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.upload-form input[type="file"] {
+  font-size: 1em;
+  color: #333;
+  background: #fff;
+  border: 1px solid #b2c831;
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+.upload-form input[type="file"]::file-selector-button {
+  background: #b2c831;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.upload-form input[type="file"]::file-selector-button:hover {
+  background: #8fa32e;
+}
+
+.prediction-text {
+  color: #fff;
+  font-size: 1.4em;
+  margin-top: 10px;
+  text-shadow: 1px 1px 8px #00000099;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 700px) {
+  .main-section {
+    padding: 20px 0 30px 0;
+    min-height: 300px;
+  }
+  .upload-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .upload-container {
+    padding: 12px 8px;
+  }
+}
